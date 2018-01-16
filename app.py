@@ -6,6 +6,7 @@ from prediction import Prediction
 from climatemodel import db
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/dalbuquerque/Workspace/python/cli/dataset.db'
 db.init_app(app)
 

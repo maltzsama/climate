@@ -8,10 +8,12 @@ from climatemodel import db
 class ClimateList(Resource):
 
     def get(self):
-        climates = ClimateModel.query.all()[:100]
+        climates = ClimateModel.query.all()[::-1]
         response = []
-        for c in climates:
+        for idx, c in enumerate(climates):
             response.append(c.as_dict())
+            if idx > 100:
+                break
         return jsonify(response)
 
     def post(self):

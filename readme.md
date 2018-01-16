@@ -9,3 +9,5 @@
 * DELETE/climate/<id> - remove da tabela uma informação baseada no código enviado
 
 * GET/predict - retorna a previsão do último dia. Eu fiquei um pouco em dúvida nesse caso, eu estou retornando o último dia. É provavel que eu precise reimplementar para retornar o dia corrente. Mas como eu resolvi usar um dataset do site que vocês me indicaram, as coisas não estão exatamente atualizadas quando o assunto é clima.
+
+Uma instancia foi colocada no meu servidor pessoal. Esse é o link de acesso. http://galileolab.io/climate/
